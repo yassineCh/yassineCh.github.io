@@ -37,12 +37,12 @@
 <div class="content" style="padding-bottom: 64px;">
     <div>
         <p>
-            I am a PhD student at <a href="https://wsu.edu">Washington State University</a>, advised by Prof. <a href="https://eecs.wsu.edu/~jana/">Jana Doppa</a>. 
+            I am a PhD candidate at <a href="https://wsu.edu">Washington State University</a>, advised by Prof. <a href="https://eecs.wsu.edu/~jana/">Jana Doppa</a>. 
         </p>
     </div>
     <div>
         <h2 class="noselect">Research Interests</h2>
-        <p>
+        <!-- <p>
             I am broadly interested in research on <span class="bold">Offline Optimization</span> and <span class="bold">Reinforcement Learning</span>. My current research focuses primarily on:
         </p>
         <ul>
@@ -52,7 +52,21 @@
             <li><font color="#6F4242" class="italic">Offline Model-Based Optimization</font>: 
                 Developing surrogate models and efficient strategies for solving high-dimensional design problems.
             </li>
+        </ul> -->
+        <p>
+            My work advances <span class="bold">offline decision-making</span>, learning to optimize and act safely from logged data when new experiments or interactions are costly. I build methods that turn static datasets into effective search and control policies for high-stakes domains such as materials discovery, healthcare, and smart grids.
+        </p>
+        <ul>
+        <li>
+            <font color="#6F4242" class="italic">Offline Model-Based Optimization</font>:
+            I develop policy-guided search and surrogate modeling for expensive black-box design. Our Policy-Guided Gradient Search reframes offline optimization as offline RL to learn how to move in design space, improving over fixed surrogate-only strategies, and our search-bias-guided surrogates discover better nanoporous materials by aligning the model’s ranking with the optimization goal.  [oai_citation:0‡Offline Model-Based Optimization via Policy-Guided Gradient Search.pdf](sediment://file_00000000eb10720ca849332898dd0bd2)  [oai_citation:1‡Nanoporous Materials Discovery via Search Bias-Guided Surrogate Modeling.pdf](sediment://file_000000000aa4722fb5eaf62e78689082)
+        </li>
+        <li>
+            <font color="#6F4242" class="italic">Offline Safe Reinforcement Learning</font>:
+            I design safety-aware offline RL that works under tight or changing constraints. For fixed budgets, we cast OSRL as a minimax problem and solve it efficiently with a multi-armed-bandit approximation that enforces costs while preserving reward, and for variable test-time limits, CAPS learns multiple policies offline and switches among them at deployment to satisfy new constraints without retraining.  [oai_citation:2‡Online Optimization for Offline Safe Reinforcement Learning.pdf](sediment://file_0000000047f071f58c0111d869b66100)  [oai_citation:3‡Constraint-Adaptive Policy Switching for Offline Safe Reinforcement Learning.pdf](sediment://file_00000000ba3471f58a741c6ac5d7b462)
+        </li>
         </ul>
+
     </div>
     <div>
         <h2 class="noselect">Publications and Preprints</h2>
