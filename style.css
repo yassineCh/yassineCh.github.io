@@ -48,3 +48,47 @@ p {line-height: 1.5em;}
     .publication .row-text {display: block; width: 100%; margin-left: 0;}
     .press {display: block;}
 }
+
+/* Wider, but still responsive, content column */
+.content,
+.footer-content {
+  max-width: min(1100px, 92vw);
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+/* Slightly larger, more readable type */
+body { 
+  font-size: 16px;         /* was 13px; your <1150px media query can still bump to 18px */
+  line-height: 1.6;
+}
+p, li { line-height: 1.6; }
+
+/* Headings scale nicely across screen sizes */
+h1 { font-size: clamp(32px, 3.2vw, 42px); margin-bottom: 24px; }
+h2 { margin-top: 40px; }
+
+/* Give list items a little breathing room */
+ul li { margin-bottom: 14px; }
+
+/* Make publication rows adapt to the wider container */
+.row-text { 
+  max-width: calc(100% - 172px);  /* 160px media + 12px gap */
+}
+
+/* Tighter mobile behavior than the default breakpoint */
+@media (max-width: 900px) {
+  .row-media {
+    float: none;
+    width: 220px;
+    height: 120px;
+    margin: 0 auto 12px;
+    display: block;
+  }
+  .row-text {
+    float: none;
+    max-width: 100%;
+    margin-left: 0;
+  }
+}

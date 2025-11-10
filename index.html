@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <title>Yassine Chemingui</title>
     <meta name="author" content="Yassine Chemingui">
@@ -14,6 +15,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+<body>
 <div class="header noselect">
     <div class="content row">
         <div class="header-profile-picture"></div>
@@ -53,23 +55,25 @@
                 Developing surrogate models and efficient strategies for solving high-dimensional design problems.
             </li>
         </ul> -->
-        <p>
-            My work advances <span class="bold">offline decision-making</span>, learning to optimize and act safely from logged data when new experiments or interactions are costly. I build methods that turn static datasets into effective search and control policies for high-stakes domains such as materials discovery, healthcare, and smart grids.
+        <p style="text-align: justify;">
+            <!-- My work advances <span class="bold">offline decision-making</span>, learning to optimize and act safely from logged data when new experiments or interactions are costly. I build methods that turn static datasets into effective search and control policies for high-stakes domains such as materials discovery, healthcare, and smart grids. -->
+            My work focuses on <span class="bold">offline decision-making</span>: learning to optimize and act safely from logged data when new experiments are costly. 
+            I build methods that turn static datasets into effective <span class="bold">optimization models</span> and <span class="bold">control policies</span>, 
+            motivated by the need for robust and safe AI in domains like materials discovery, healthcare, and smart grids.
         </p>
-        <ul>
+        <ul style="text-align: justify;">
         <li style="margin-bottom:15px;">
-            <font color="#6F4242" class="italic">Offline Model-Based Optimization</font>:
-            I develop policy-guided search and surrogate modeling for expensive black-box design. 
-            Our Policy-Guided Gradient Search reframes offline optimization as offline RL to learn how to move in design space, 
-            improving over fixed surrogate-only strategies, and our search-bias-guided surrogates discover better nanoporous materials 
-            by aligning the model’s ranking with the optimization goal. 
+            <font color="#6F4242" class="italic">Offline Safe Reinforcement Learning</font>:
+            Ensuring safety constraints, optimizing robust policies from limited data, and enabling risk-aware decision-making. 
+            For fixed budgets,we used a minimax formulation with bandit-style updates; and for variable test-time constraints, 
+            we designed adaptive policies that switch at deployment without retraining.
         </li>
         <li>
-            <font color="#6F4242" class="italic">Offline Safe Reinforcement Learning</font>:
-            I design safety-aware offline RL that works under tight or changing constraints. For fixed budgets, 
-            we cast OSRL as a minimax problem and solve it efficiently with a multi-armed-bandit approximation that enforces costs 
-            while preserving reward, and for variable test-time limits, CAPS learns multiple policies offline and switches 
-            among them at deployment to satisfy new constraints without retraining.  
+            <font color="#6F4242" class="italic">Offline Model-Based Optimization</font>:
+            Developing surrogate models and efficient search strategies for high-dimensional design problems. 
+            This includes recasting offline optimization as an RL problem to guide the search, 
+            and designing search-bias-guided surrogates that better align the model's ranking with the optimization goal.
+  
         </li>
         </ul>
 
@@ -141,3 +145,5 @@
         Template from <a style="color: white; text-decoration: underline;" href="https://nicklashansen.github.io/">Nicklas Hansen</a>.
     </div>
 </div>
+</body>
+</html>
