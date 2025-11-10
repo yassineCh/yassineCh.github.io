@@ -92,3 +92,37 @@ ul li { margin-bottom: 14px; }
     margin-left: 0;
   }
 }
+
+/* Make the header scale better on desktop screens */
+.header .content {
+  max-width: min(1100px, 92vw);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Enlarge profile picture, name, and links for desktop */
+@media (min-width: 1151px) {
+  .header-profile-picture {
+    width: 140px;
+    height: 140px;
+    margin-right: 20px;
+  }
+
+  .header-name h1 {
+    font-size: 2.8em;   /* was 2.6em */
+    margin-bottom: 8px;
+  }
+
+  .header-subtitle {
+    font-size: 1.2em;
+  }
+
+  .header-links .btn {
+    font-size: 15px;
+    padding: 4px 8px;
+  }
+
+  .header-links {
+    margin-top: 6px;
+  }
+}
