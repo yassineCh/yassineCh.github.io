@@ -1,176 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Yassine Chemingui</title>
-    <meta name="author" content="Yassine Chemingui">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Yassine Chemingui">
-	<meta property="og:description" content="PhD candidate Washington State University">
-    <meta property="og:image" content="https://yassinech.github.io/files/me.png">
-	<meta property="og:url" content="https://yassinech.github.io/">
-	<meta name="twitter:card" content="summary_large_image">
-    <link rel="apple-touch-icon" href="files/wsu-logo.jpg">
-    <link rel="icon" type="image/png" href="files/wsu-logo.jpg">
-    <link rel="manifest" href="files/site.webmanifest">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yassine Chemingui</title>
+  <meta name="author" content="Yassine Chemingui">
+  <meta name="description" content="Yassine Chemingui — PhD candidate at Washington State University working on safe reinforcement learning and offline model-based optimization.">
+  <meta property="og:title" content="Yassine Chemingui">
+  <meta property="og:description" content="PhD candidate Washington State University">
+  <meta property="og:image" content="https://yassinech.github.io/files/me.png">
+  <meta property="og:url" content="https://yassinech.github.io/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" sizes="32x32" href="files/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="files/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="files/apple-touch-icon.png">
+  <link rel="manifest" href="files/site.webmanifest">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script>
+    // Apply saved theme before first paint to avoid a flash.
+    try { var t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
 </head>
 
 <body>
-<div class="header noselect">
-    <div class="content row">
-        <div class="header-profile-picture"></div>
-        <div class="header-text">
-            <div class="header-name">
-                <h1>Yassine Chemingui</h1>
-            </div>
-            <div class="header-subtitle">
-                PhD candidate, Wasington State University
-            </div>
-            <div class="header-links">
-                <a class="btn" href="#contact">Email</a> /
-                <a class="btn" href="https://scholar.google.com/citations?user=hrnDp7cAAAAJ&hl=en">Google Scholar</a> /
-                <a class="btn" href="https://github.com/yassineCh">GitHub</a> /
-                <a class="btn" href="https://www.linkedin.com/in/yassine-chemingui-471519138/">LinkedIn</a> /
-                <a class="btn" href="files/CV.pdf">CV</a>
-            </div>
+<div class="layout">
+
+  <!-- ───────────── Sidebar / profile ───────────── -->
+  <aside class="profile">
+    <img class="avatar" src="files/me.png" alt="Portrait of Yassine Chemingui" width="160" height="160">
+    <h1 class="name">Yassine Chemingui</h1>
+    <p class="role">PhD Candidate</p>
+    <p class="affil">
+      <a href="https://eecs.wsu.edu">School of EECS</a><br>
+      <a href="https://wsu.edu">Washington State University</a>
+    </p>
+
+    <nav class="links" aria-label="Profiles">
+      <a href="#" class="js-email" title="Email"><i class="fa-solid fa-envelope"></i><span>Email</span></a>
+      <a href="https://scholar.google.com/citations?user=hrnDp7cAAAAJ&hl=en" title="Google Scholar"><i class="ai ai-google-scholar"></i><span>Scholar</span></a>
+      <a href="https://github.com/yassineCh" title="GitHub"><i class="fa-brands fa-github"></i><span>GitHub</span></a>
+      <a href="https://www.linkedin.com/in/yassine-chemingui-471519138/" title="LinkedIn"><i class="fa-brands fa-linkedin"></i><span>LinkedIn</span></a>
+    </nav>
+
+    <a class="cv-btn" href="files/CV.pdf"><i class="fa-solid fa-file-arrow-down"></i> Download CV</a>
+
+    <nav class="toc" aria-label="Sections">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#service">Service</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+      <i class="fa-solid fa-moon"></i><i class="fa-solid fa-sun"></i>
+    </button>
+  </aside>
+
+  <!-- ───────────── Main content ───────────── -->
+  <main>
+
+    <section id="about">
+      <p>
+        I am a PhD candidate at <a href="https://wsu.edu">Washington State University</a>, advised by
+        Prof. <a href="https://eecs.wsu.edu/~jana/">Jana Doppa</a>.
+      </p>
+      <p>
+        I study how AI systems can make good decisions when trial and error is expensive or risky.
+        My research spans <strong>safe reinforcement learning</strong>, where agents must maximize
+        performance while keeping costs and risks within limits, and <strong>offline model-based
+        optimization</strong>, where the goal is to discover better designs using only data from past
+        experiments. This work is motivated by high-stakes applications such as materials discovery,
+        healthcare, and smart grids.
+      </p>
+    </section>
+
+    <section id="research">
+      <h2>Research</h2>
+      <div class="themes">
+        <article class="theme">
+          <div class="theme-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <h3>Safe Reinforcement Learning</h3>
+          <p>
+            Agents that maximize reward while satisfying safety constraints, whether they learn from
+            logged data (offline) or through interaction (online).
+          </p>
+          <ul class="theme-points">
+            <li>Learning safe policies from fixed datasets</li>
+            <li>Adapting to safety requirements that change at deployment</li>
+            <li>Guarding against rare but severe failures</li>
+          </ul>
+        </article>
+        <article class="theme">
+          <div class="theme-icon"><i class="fa-solid fa-atom"></i></div>
+          <h3>Offline Model-Based Optimization</h3>
+          <p>
+            Discovering high-performing designs from a fixed dataset of past experiments, when every
+            new evaluation is costly.
+          </p>
+          <ul class="theme-points">
+            <li>Surrogate models that rank candidate designs reliably</li>
+            <li>Efficient search in high-dimensional design spaces</li>
+            <li>Applications to scientific discovery, such as new materials</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="publications">
+      <div class="section-head">
+        <h2>Publications</h2>
+        <div class="filters" role="group" aria-label="Filter publications">
+          <button class="chip is-active" data-filter="all">All</button>
+          <button class="chip" data-filter="safe-rl">Safe RL</button>
+          <button class="chip" data-filter="mbo">Optimization</button>
         </div>
-    </div>
+      </div>
+      <p class="note">* equal contribution</p>
+
+      <div class="pubs">
+        <article class="pub" data-tags="safe-rl">
+          <img class="pub-thumb" src="files/atoms_clip1.png" alt="" loading="lazy">
+          <div class="pub-body">
+            <div class="pub-meta"><span class="venue">UAI 2026</span></div>
+            <h3 class="pub-title"><a href="https://arxiv.org/abs/2607.13175">SteinGate: Tail-Sensitive Safe Reinforcement Learning via Stein Discrepancy</a></h3>
+            <p class="authors"><span class="me">Yassine Chemingui*</span>, Chenhua Fan*, Honghao Wei, Janardhan Rao Doppa</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2607.13175"><i class="fa-solid fa-file-lines"></i> arXiv</a>
+              <a href="https://github.com/yassineCh/SteinGate"><i class="fa-brands fa-github"></i> Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pub" data-tags="mbo">
+          <img class="pub-thumb" src="files/nanoporous.png" alt="" loading="lazy">
+          <div class="pub-body">
+            <div class="pub-meta"><span class="venue">AAAI 2026</span></div>
+            <h3 class="pub-title">Nanoporous Materials Discovery via Search Bias-Guided Surrogate Modeling</h3>
+            <p class="authors">Azza Fadhel, <span class="me">Yassine Chemingui</span>, Minh Hoang, Aryan Deshwal, Trong Nghia Hoang, Janardhan Rao Doppa</p>
+          </div>
+        </article>
+
+        <article class="pub" data-tags="safe-rl">
+          <img class="pub-thumb" src="files/O3SRL.png" alt="" loading="lazy">
+          <div class="pub-body">
+            <div class="pub-meta"><span class="venue">NeurIPS 2025</span></div>
+            <h3 class="pub-title"><a href="https://arxiv.org/abs/2510.22027">Online Optimization for Offline Safe Reinforcement Learning</a></h3>
+            <p class="authors"><span class="me">Yassine Chemingui</span>, Aryan Deshwal, Alan Fern, Thanh Nguyen-Tang, Janardhan Rao Doppa</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2510.22027"><i class="fa-solid fa-file-lines"></i> arXiv</a>
+              <a href="https://github.com/yassineCh/O3SRL"><i class="fa-brands fa-github"></i> Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pub" data-tags="safe-rl">
+          <img class="pub-thumb" src="files/CAPS3.png" alt="" loading="lazy">
+          <div class="pub-body">
+            <div class="pub-meta"><span class="venue">AAAI 2025</span><span class="badge">Oral</span></div>
+            <h3 class="pub-title"><a href="https://arxiv.org/abs/2412.18946">Constraint-Adaptive Policy Switching for Offline Safe Reinforcement Learning</a></h3>
+            <p class="authors"><span class="me">Yassine Chemingui</span>, Aryan Deshwal, Honghao Wei, Alan Fern, Janardhan Rao Doppa</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2412.18946"><i class="fa-solid fa-file-lines"></i> arXiv</a>
+              <a href="https://github.com/yassineCh/CAPS"><i class="fa-brands fa-github"></i> Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pub" data-tags="mbo">
+          <img class="pub-thumb" src="files/pgs.png" alt="" loading="lazy">
+          <div class="pub-body">
+            <div class="pub-meta"><span class="venue">AAAI 2024</span></div>
+            <h3 class="pub-title"><a href="https://arxiv.org/abs/2405.05349">Offline Model-Based Optimization via Policy-Guided Gradient Search</a></h3>
+            <p class="authors"><span class="me">Yassine Chemingui</span>, Aryan Deshwal, Trong Nghia Hoang, Janardhan Rao Doppa</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2405.05349"><i class="fa-solid fa-file-lines"></i> arXiv</a>
+              <a href="https://github.com/yassineCh/PGS"><i class="fa-brands fa-github"></i> Code</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="service">
+      <h2>Service &amp; Teaching</h2>
+      <div class="service-grid">
+        <div>
+          <h3 class="sub">Reviewing</h3>
+          <ul class="review-list">
+            <li>
+              <span class="conf">NeurIPS</span><span class="years">2024, 2025</span>
+              <span class="award"><i class="fa-solid fa-award"></i> Top Reviewer 2024</span>
+            </li>
+            <li>
+              <span class="conf">ICML</span><span class="years">2025, 2026</span>
+              <span class="award gold"><i class="fa-solid fa-medal"></i> Gold Technical Reviewer 2026</span>
+            </li>
+            <li>
+              <span class="conf">ICLR</span><span class="years">2025, 2026</span>
+              <span class="award"><i class="fa-solid fa-award"></i> Top 200 Reviewer 2026</span>
+            </li>
+            <li><span class="conf">AAAI</span><span class="years">2024, 2025, 2026, 2027</span></li>
+            <li><span class="conf">AISTATS</span><span class="years">2025</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="sub">Teaching Assistant</h3>
+          <ul class="review-list">
+            <li><span class="conf">Introduction to Machine Learning</span><span class="years">Fall 2023</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        I am always happy to discuss research and potential collaborations. You can reach me at
+        <a href="#" class="js-email"><strong>yassine.chemingui [at] wsu.edu</strong></a>.
+      </p>
+    </section>
+
+    <footer>
+      © <span id="year">2026</span> Yassine Chemingui
+    </footer>
+  </main>
 </div>
-<div class="content" style="padding-bottom: 64px;">
-    <div>
-        <p>
-            I am a PhD candidate at <a href="https://wsu.edu">Washington State University</a>, advised by Prof. <a href="https://eecs.wsu.edu/~jana/">Jana Doppa</a>. 
-        </p>
-    </div>
-    <div>
-        <h2 class="noselect">Research Interests</h2>
-        <p style="text-align: justify;">
-            <!-- My work advances <span class="bold">offline decision-making</span>, learning to optimize and act safely from logged data when new experiments or interactions are costly. I build methods that turn static datasets into effective search and control policies for high-stakes domains such as materials discovery, healthcare, and smart grids. -->
-            My work focuses on <span class="bold">offline decision-making</span>: learning to optimize and act safely from logged data when new experiments are costly. 
-            I build methods that turn static datasets into effective <span class="bold">optimization models</span> and <span class="bold">control policies</span>, 
-            motivated by the need for robust and safe AI in domains like materials discovery, healthcare, and smart grids.
-        </p>
-        <ul style="text-align: justify;">
-        <li style="margin-bottom:15px;">
-            <font color="#6F4242" class="italic">Offline Safe Reinforcement Learning</font>:
-            Ensuring safety constraints, optimizing robust policies from limited data, and enabling risk-aware decision-making. 
-            For fixed budgets,we used a minimax formulation with bandit-style updates; and for variable test-time constraints, 
-            we designed adaptive policies that switch at deployment without retraining.
-        </li>
-        <li>
-            <font color="#6F4242" class="italic">Offline Model-Based Optimization</font>:
-            Developing surrogate models and efficient search strategies for high-dimensional design problems. 
-            This includes recasting offline optimization as an RL problem to guide the search, 
-            and designing search-bias-guided surrogates that better align the model's ranking with the optimization goal.
-  
-        </li>
-        </ul>
 
-    </div>
-    <div>
-        <h2 class="noselect">Publications and Preprints</h2>
-        <div class="publication row clearfix">
-            <div class="row-media" style="background-image: url(files/atoms_clip1.png);"></div>
-            <div class="row-text">
-                <a class="publication-title bold" href="">SteinGate: Tail-Sensitive Safe Reinforcement Learning via Stein Discrepancy</a><br/> 
-                <span class="bold">Yassine Chemingui*</span>, Chenhua Fan*, Honghao Wei, Janardhan Rao Doppa.<br/>
-                <span class="italic">Conference on Uncertainty in Artificial Intelligence (<a href="https://www.auai.org/">UAI</a>)</span>, 2026.<br/>
-                <a class="btn btn-red" href="https://arxiv.org/abs/2607.13175">arXiv</a> / <a class="btn" href="https://github.com/yassineCh/SteinGate">code</a>
-            </div>
-        </div>
-        <div class="publication row clearfix">
-            <div class="row-media" style="background-image: url(files/nanoporous.png);"></div>
-            <div class="row-text">
-                <a class="publication-title bold" href="">Nanoporous Materials Discovery via Search Bias-Guided Surrogate Modeling</a><br/> 
-                Azza Fadhel, <span class="bold">Yassine Chemingui</span>, Minh Hoang, Aryan Deshwal, Trong Nghia Hoang, Janardhan Rao Doppa.<br/>
-                <span class="italic">Association for the Advancement of Artificial Intelligence (<a href="https://aaai.org">AAAI</a>)</span>, 2026.<br/>
-                <!-- <a class="btn btn-red" href="">arXiv</a> / <a class="btn" href="">code</a> -->
-            </div>
-        </div>
-        <div class="publication row clearfix">
-            <div class="row-media" style="background-image: url(files/O3SRL.png);"></div>
-            <div class="row-text">
-                <a class="publication-title bold" href="">Online Optimization for Offline Safe Reinforcement Learning</a><br/>
-                <span class="bold">Yassine Chemingui</span>, Aryan Deshwal, Alan Fern, Thanh Nguyen-Tang, Janardhan Rao Doppa.<br/>
-                <span class="italic">Conference on Neural Information Processing Systems (<a href="https://neurips.cc">NeurIPS</a>)</span>, 2025.<br/>
-                <a class="btn btn-red" href="https://arxiv.org/abs/2510.22027">arXiv</a> / <a class="btn" href="https://github.com/yassineCh/O3SRL">code</a>
-            </div>
-        </div>
-        <div class="publication row clearfix">
-            <div class="row-media" style="background-image: url(files/CAPS3.png);"></div>
-            <div class="row-text">
-                <a class="publication-title bold" href="#">Constraint-Adaptive Policy Switching for Offline Safe Reinforcement Learning</a><br/>
-                <span class="bold">Yassine Chemingui</span>, Aryan Deshwal, Honghao Wei, Alan Fern, Janardhan Rao Doppa.<br/>
-                <span class="italic">Association for the Advancement of Artificial Intelligence (<a href="https://aaai.org">AAAI</a>)</span>, 2025 (<span class="bold" style="color: #f04328;">Oral</span>).<br/>
-                <a class="btn btn-red" href="https://arxiv.org/abs/2412.18946">arXiv</a> / <a class="btn" href="https://github.com/yassineCh/CAPS">code</a>
-            </div>
-        </div>
-        <div class="publication row clearfix">
-            <div class="row-media" style="background-image: url(files/pgs.png);"></div>
-            <div class="row-text">
-                <a class="publication-title bold" href="https://arxiv.org/abs/2405.05349">Offline Model-Based Optimization via Policy-Guided Gradient Search</a><br/>
-                <span class="bold">Yassine Chemingui</span>, Aryan Deshwal, Trong Nghia Hoang, Janardhan Rao Doppa.<br/>
-                <span class="italic">Association for the Advancement of Artificial Intelligence (<a href="https://aaai.org">AAAI</a>)</span>, 2024.<br/>
-                <a class="btn btn-red" href="https://arxiv.org/abs/2405.05349">arXiv</a> / <a class="btn" href="https://github.com/yassineCh/PGS">code</a>
-            </div>
-        </div>
+<script>
+  // Email assembled at runtime to keep it away from scrapers.
+  var addr = ["yassine.chemingui", "wsu.edu"].join("@");
+  document.querySelectorAll(".js-email").forEach(function (a) { a.href = "mailto:" + addr; });
 
-    </div>
-   
-    <h2 class="noselect">Service and Teaching</h2>
+  // Publication filters.
+  var chips = document.querySelectorAll(".chip");
+  chips.forEach(function (chip) {
+    chip.addEventListener("click", function () {
+      chips.forEach(function (c) { c.classList.toggle("is-active", c === chip); });
+      var f = chip.dataset.filter;
+      document.querySelectorAll(".pub").forEach(function (p) {
+        p.hidden = f !== "all" && p.dataset.tags.split(" ").indexOf(f) === -1;
+      });
+    });
+  });
 
-    <div class="service-section">
-        <h3>Reviewing</h3>
-        <ul>
-            <li>
-                <span class="bold">AAAI 2024, 2025, 2026, 2027</span>
-            </li>
+  // Theme toggle.
+  document.querySelector(".theme-toggle").addEventListener("click", function () {
+    var root = document.documentElement;
+    var dark = root.dataset.theme
+      ? root.dataset.theme === "dark"
+      : matchMedia("(prefers-color-scheme: dark)").matches;
+    root.dataset.theme = dark ? "light" : "dark";
+    try { localStorage.setItem("theme", root.dataset.theme); } catch (e) {}
+  });
 
-            <li>
-                <span class="bold">
-                    NeurIPS <span style="color: #b22222; font-weight: bold;">2024</span>, 2025
-                </span> —
-                <span style="color: #b22222; font-weight: bold;">Top Reviewer</span>
-            </li>
-
-            <li>
-                <span class="bold">
-                    ICML 2025, <span style="color: #b8860b; font-weight: bold;">2026</span>
-                </span> —
-                <span style="color: #b8860b; font-weight: bold;">Technical Reviewer: Gold</span>
-            </li>
-
-            <li>
-                <span class="bold">
-                    ICLR 2025, <span style="color: #b22222; font-weight: bold;">2026</span>
-                </span> —
-                <span style="color: #b22222; font-weight: bold;">Top 200 Reviewer</span>
-            </li>
-
-            <li>
-                <span class="bold">AISTATS 2025</span>
-            </li>
-        </ul>
-    </div>
-
-    <div class="service-section">
-        <h3>Teaching Assistance</h3>
-        <ul>
-            <li><span class="bold">Introduction to Machine Learning</span> (Fall 2023)</li>
-        </ul>
-    </div>
-
-    <div class="noselect">
-        <a id="contact"></a>
-        <h2>Contact</h2>
-        You are very welcome to contact me regarding my research at <span class="bold">yassine.chemingui[at]wsu.edu</span>.
-    </div>
-</div>
-<div class="footer noselect">
-    <div class="footer-content">
-        Template from <a style="color: white; text-decoration: underline;" href="https://nicklashansen.github.io/">Nicklas Hansen</a>.
-    </div>
-</div>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
